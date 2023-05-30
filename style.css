@@ -29,7 +29,7 @@ body a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: -1rem 5rem;    
+    margin: -1rem 5rem;
 }
 
 .navbar a {
@@ -82,8 +82,8 @@ header h4 {
 }
 
 .objetivos {
-    
-    border-bottom: solid 0.1rem var(--borders);
+
+    border-bottom: solid 0.1rem var(--links);
 }
 
 
@@ -143,7 +143,7 @@ main a:hover {
     text-decoration: underline;
 }
 
-main a:visited{
+main a:visited {
     text-decoration: underline;
 }
 
@@ -157,6 +157,71 @@ footer {
 }
 
 
-/* design responsivo */
+/* responsivo */
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        margin: 0rem;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        text-align: center;
+    }
 
 
+    header p {
+        text-align: center;
+        text-indent: 1.5rem;
+        padding: 0.3rem;
+        width: auto;
+    }
+
+     header h4 {
+        display: none;
+     }
+
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: -1rem 5rem;
+    }
+
+    .avatar-valkna {
+        margin: 3rem 0rem 0rem 5rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .alo p {
+        text-align: justify;
+        margin: 1rem;
+        margin-top: 2rem;
+
+    }
+
+    .objetivos p{
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    .logo-valkna {
+        margin: -2rem 0rem 0rem 7rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 50dvw;
+        height: 50dvh;
+    
+    }
+
+    footer {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+    }
+}
