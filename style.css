@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
+:root {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    color: #2d302e;
+    font-family: var(--primary-font);
+    font-size: 1.1rem;
+    --background: #000;
+    --borders: #fff;
+    --links: #00FFFF;
+    --primary-font: 'Exo 2', Arial, sans-serif;
+    --text: #2d302e;
+}
+
+
+body {
+    background: #fff;
+}
+
+body a {
+    cursor: pointer;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: -1rem 5rem;    
+}
+
+.navbar a {
+    padding: 1.5rem;
+}
+
+.navbar img {
+    border-radius: 50%;
+    justify-content: space-around;
+}
+
+
+.navbar img:hover {
+    animation: spin-animation 0.3s;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+
+@keyframes spin-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+header {
+    margin: 0.5rem 3rem 1rem 2rem;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    text-align: center;
+}
+
+
+header p {
+    text-align: justify;
+    text-indent: 1.5rem;
+    padding: 0.3rem;
+    width: auto;
+}
+
+
+header h4 {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.objetivos {
+    
+    border-bottom: solid 0.1rem var(--borders);
+}
+
+
+.avatar-valkna img {
+    width: 15rem;
+    height: 15rem;
+    margin: -1rem 0rem 0rem 0rem;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 50%;
+    border-bottom: solid var(--links);
+    border-left: solid var(--links);
+}
+
+.avatar-valkna a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.avatar-valkna a:hover {
+    text-decoration: underline;
+}
+
+.avatar-valkna a:visited {
+    text-decoration: underline;
+}
+
+.logo-valkna {
+    display: flex;
+    align-items: flex-start;
+    margin: -4.6rem 0rem 0rem -12.5rem;
+}
+
+
+main {
+    margin: -1rem 0rem 2rem 0rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+main p {
+    padding: 0.5rem;
+    text-indent: 1.5rem;
+    align-items: center;
+    text-align: justify;
+    margin: 0rem 7rem 0rem 7rem;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main a:visited{
+    text-decoration: underline;
+}
+
+footer {
+    margin: 0rem 3rem 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+    margin-top: 1rem;
+    border-top: solid 0.12rem var(--borders);
+}
+
+
+/* design responsivo */
+
+
