@@ -5,19 +5,17 @@
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
-    color: #2d302e;
     font-family: var(--primary-font);
     font-size: 1.1rem;
-    --background: #ffff;
-    --borders: #fff;
-    --links: #00FFFF;
+    --background: #f0ffff;
+    --borders: #000;
     --primary-font: 'Exo 2', Arial, sans-serif;
     --text: #2d302e;
 }
 
 
 body {
-    background: #fff;
+    background: var(--background);
 }
 
 body a {
@@ -83,17 +81,13 @@ header h4 {
 
 .objetivos {
 
-    border-bottom: solid 0.1rem var(--links);
+    border-bottom: solid 0.12rem var(--borders);
 }
 
 
 .mobile-logo {
     display: none;
 
-}
-
-.email {
-    display: none;
 }
 
 
@@ -164,14 +158,17 @@ footer {
         margin: 0rem;
         padding: 0rem;
         box-sizing: border-box;
-        color: #2d302e;
         font-family: var(--primary-font);
         font-size: 1.2rem;
-        --background: #ffff;
-        --borders: #fff;
+        --background: #f0ffff;
+        --borders: #000;
         --links: #00FFFF;
         --primary-font: 'Exo 2', Arial, sans-serif;
         --text: #2d302e;
+    }
+
+    body {
+        background-color: var(--background);
     }
 
     header {
@@ -225,11 +222,6 @@ footer {
     .objetivos p{
         text-align: justify;
         margin: 1rem;
-    }
-
-    .logo-valkna {
-        display: none;
-    
     }
 
     footer {
