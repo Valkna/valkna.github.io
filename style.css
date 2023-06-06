@@ -1,100 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
-
 :root {
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
+    background: #DBF4EE;
+    background: linear-gradient(135deg, #DBF4EE, #91DE88);
     font-family: var(--primary-font);
-    font-size: 1.1rem;
-    --background: #f0ffff;
-    --borders: #000;
     --primary-font: 'Exo 2', Arial, sans-serif;
-    --text: #2d302e;
+    --text: #000;
 }
 
-
 body {
-    background: var(--background);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem 1.3rem 2.3rem 2.3rem;
 }
 
 body a {
-    cursor: pointer;
+    text-decoration: none;
+    color: var(--text);
 }
-
 
 .navbar {
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin: -1rem 5rem;
-}
+    justify-content: space-evenly;
 
-.navbar a {
-    padding: 1.5rem;
 }
 
 .navbar img {
-    border-radius: 50%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-
-.navbar img:hover {
-    animation: spin-animation 0.3s;
-    animation-timing-function: linear;
-    display: inline-block;
-}
-
-@keyframes spin-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-header {
-    margin: 0.5rem 3rem 1rem 2rem;
-    display: flex;
-    flex-flow: row;
-    align-items: flex-start;
-    text-align: center;
-}
-
-
-header p {
-    text-align: justify;
-    text-indent: 1.5rem;
-    padding: 0.3rem;
-    width: auto;
-}
-
-
-header h4 {
-    margin-left: 2rem;
-    margin-top: 0.5rem;
-}
-
-.objetivos {
-
-    border-bottom: solid 0.12rem var(--borders);
-}
-
-
-.mobile-logo {
-    display: none;
-
-}
-
-
-.avatar-valkna img {
-    margin: -1rem 0rem 0rem 0rem;
-    display: flex;
-    align-items: flex-start;
+.avatar-valkna h4 {
+    font-size: 1rem;
 }
 
 .avatar-valkna a {
@@ -102,131 +45,138 @@ header h4 {
     color: var(--text);
 }
 
-.avatar-valkna a:hover {
-    text-decoration: underline;
+.objetivos p {
+    text-align: justify;
+    text-indent: 1.5rem;
+    padding: 0.5rem;
 }
-
-.avatar-valkna a:visited {
-    text-decoration: underline;
-}
-
-
-main {
-    margin: -1rem 0rem 2rem 0rem;
-    padding: 0rem;
-    display: flex;
-    justify-content: center;
-}
-
 
 main p {
-    padding: 0.5rem;
-    text-indent: 1.5rem;
-    align-items: center;
     text-align: justify;
-    margin: 0rem 7rem 0rem 7rem;
+    text-indent: 1.5rem;
+    padding: 0.5rem;
 }
 
-main a {
-    text-decoration: none;
-    color: var(--text);
+footer p {
+    text-align: center;
+    align-items: center;
+    margin: 3rem;
+    padding: 1rem;
+    border-top: solid 0.2rem black;
+
 }
 
-main a:hover {
-    text-decoration: underline;
-}
-
-main a:visited {
-    text-decoration: underline;
-}
-
-footer {
-    margin: 0rem 3rem 0rem 2rem;
-    display: flex;
-    justify-content: center;
-    font-size: smaller;
-    margin-top: 1rem;
-    border-top: solid 0.12rem var(--borders);
-}
-
-
-/* responsivo */
-
-@media only screen and (max-width: 600px) {
-
-    :root {
-        margin: 0rem;
-        padding: 0rem;
-        box-sizing: border-box;
-        font-family: var(--primary-font);
-        font-size: 1.2rem;
-        --background: #f0ffff;
-        --borders: #000;
-        --primary-font: 'Exo 2', Arial, sans-serif;
-        --text: #2d302e;
-    }
+/*responsive*/
+@media screen and (min-width: 900px) {
 
     body {
-        background-color: var(--background);
+        margin: 1.5rem 3rem 1rem 2rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
-
-    header {
-        margin: 0rem 0rem 0rem 0rem;
-        display: flex;
-        flex-flow: wrap;
-        align-items: center;
-        text-align: center;
-    }
-
-
-    header p {
-        text-align: center;
-        text-indent: 1.5rem;
-        padding: 0.3rem;
-        width: auto;
-    }
-
-     header h4 {
-        display: none;
-     }
-
 
     .navbar {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        margin: -1rem 5rem;
+        justify-content: flex-end;
+        margin-top: -1.5rem;
+    }
+    
+    .navbar a {
+        padding: 1rem;
     }
 
-    .mobile-logo {
-        margin: -5rem 0rem -4rem 0rem;
+    .navbar img:hover {
+        
+    }
+    
+    .navbar img {
+        border-radius: 50%;
+        justify-content: space-around;
+    }
+
+    header {
+        margin: 0.5rem 3rem 1rem 2rem;
         display: flex;
-        width: 100%;
-        height: 100vw;
-        align-items: center;
-        justify-content: center
-    }
-
-    .avatar-valkna {
-        display: none;
-    }
-
-    .alo p {
-        text-align: justify;
-        margin: 1rem;
-        margin-top: 2rem;
-
-    }
-
-    .objetivos p{
-        text-align: justify;
-        margin: 1rem;
-    }
-
-    footer {
+        flex-flow: row;
+        align-items: flex-start;
         text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-size: medium;
     }
+    
+    
+    header p {
+        text-align: justify;
+        text-indent: 1.5rem;
+        padding: 0.3rem;
+        width: auto;
+    }
+    
+    
+    header h4 {
+        margin-left: -9rem;
+        margin-top: 1rem;
+    }
+    
+    .avatar-valkna img {
+        margin: -4rem 0rem 0rem 0rem;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .avatar-valkna a {
+        text-decoration: none;
+        color: var(--text);
+    }
+    
+    .avatar-valkna a:hover {
+        text-decoration: underline;
+    }
+    
+    .avatar-valkna a:visited {
+        text-decoration: underline;
+    }
+    
+    .objetivos {
+        margin-top: -3rem;
+    }
+
+    main {
+        margin: 1rem 0rem 0rem 0rem;
+        padding: 0rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    main p {
+        padding: 0.5rem;
+        text-indent: 1.5rem;
+        align-items: center;
+        text-align: justify;
+        margin: 0rem 7rem 0rem 7rem;
+    }
+    
+    main a {
+        text-decoration: none;
+        color: var(--text);
+    }
+    
+    main a:hover {
+        text-decoration: underline;
+    }
+    
+    main a:visited {
+        text-decoration: underline;
+    }
+    
+    footer {
+        margin: 0rem;
+        display: flex;
+        justify-content: center;
+        font-size: smaller;
+        border-top: solid 0.12rem var(--borders);
+    }
+
+
+
 }
