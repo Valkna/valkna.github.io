@@ -36,6 +36,13 @@ body a {
     justify-content: space-between;
 }
 
+.avatar-valkna img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
 .avatar-valkna h4 {
     font-size: 1rem;
 }
