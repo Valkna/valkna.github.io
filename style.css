@@ -40,7 +40,7 @@ body a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
+    width: 100%;
 }
 
 .avatar-valkna h4 {
