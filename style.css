@@ -1,47 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+:root {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  background: #638d83;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  font-family: var(--primary-font);
+  --primary-font: 'Exo 2', sans-serif;
+  --text: #fff;
+  --back: #15FBFA;
+}
+
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #000;
-    color: #0f0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 1.3rem 2.3rem 2.3rem;
+  color: var(--text);
 }
 
-.navbar, .avatar-valkna, .objetivos, .alo, footer {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+body a {
+  text-decoration: none;
+  color: var(--text);
 }
 
-.navbar img, .avatar-valkna img {
-    width: 50px;
-    height: 50px;
+.navbar {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.avatar-valkna {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar img {
+  justify-content: space-between;
+  background-color: #fff;
 }
 
 .avatar-valkna img {
-    width: 150px;
-    height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.avatar-valkna h4 {
+  font-size: 1rem;
+}
+
+.avatar-valkna a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.objetivos p {
+  text-align: justify;
+  text-indent: 1.5rem;
+  padding: 0.5rem;
+}
+
+main p {
+  text-align: justify;
+  text-indent: 1.5rem;
+  padding: 0.5rem;
+}
+
+footer p {
+  text-align: center;
+  align-items: center;
+  margin: 3rem;
+  padding: 1rem;
+  border-top: solid 0.2rem black;
+}
+
+
+
+
+
+/*responsive*/
+@media screen and (min-width: 900px) {
+  body {
+    margin: 1.5rem 3rem 1rem 2rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -1.5rem;
+  }
+
+  .navbar a {
+    padding: 1rem;
+  }
+
+
+  .navbar img {
     border-radius: 50%;
-}
+    justify-content: space-around;
+  }
 
-.avatar-valkna h4, .avatar-valkna h4 a {
-    color: #0f0;
-    text-decoration: none;
-}
-
-.objetivos, .alo {
-    text-align: justify;
-}
-
-footer {
+  header {
+    margin: 0.5rem 3rem 1rem 2rem;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
     text-align: center;
+  }
+
+  header p {
+    text-align: justify;
+    text-indent: 1.5rem;
+    padding: 0.3rem;
+    width: auto;
+  }
+
+  header h4 {
+    margin-left: -9rem;
+    margin-top: 1rem;
+  }
+
+  .avatar-valkna img {
+    margin: -4rem 0rem 0rem 0rem;
+    display: flex;
+    align-items: flex-start;
+    width: 400px;
+    height: 214px;
+  }
+
+  .avatar-valkna a {
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .avatar-valkna a:hover {
+    text-decoration: underline;
+  }
+
+  .avatar-valkna a:visited {
+    text-decoration: underline;
+  }
+
+  .objetivos {
+    margin-top: -3rem;
+  }
+
+  main {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  main p {
+    padding: 0.5rem;
+    text-indent: 1.5rem;
+    align-items: center;
+    text-align: justify;
+    margin: 0rem 7rem 0rem 7rem;
+  }
+
+  main a {
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  main a:hover {
+    text-decoration: underline;
+  }
+
+  main a:visited {
+    text-decoration: underline;
+  }
+
+  footer {
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+    border-top: solid 0.12rem var(--borders);
+  }
 }
 
-@media screen and (max-width: 600px) {
-    .navbar, .avatar-valkna, .objetivos, .alo, footer {
-        width: 100%;
+@media screen and (min-width: 320px) {
+    body {
+      margin: 1.5rem 3rem 1rem 2rem;
+      height: max-content;
+      max-height:100%;
     }
-}
+
+    .navbar img {
+        border-radius: 90%;
+        justify-content: space-around;
+      }
+
+
+    }
