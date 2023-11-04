@@ -1,191 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
-
-:root {
-    margin: 0rem;
-    padding: 0rem;
-    box-sizing: border-box;
-    background: #DBF4EE;
-    background: linear-gradient(135deg, #DBF4EE, #91DE88);
-    font-family: var(--primary-font);
-    --primary-font: 'Exo 2', Arial, sans-serif;
-    --text: #000;
-}
-
 body {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 2rem 1.3rem 2.3rem 2.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0f0;
 }
 
-body a {
-    text-decoration: none;
-    color: var(--text);
+.navbar, .avatar-valkna, .objetivos, .alo, footer {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
 
-.navbar {
-    margin-bottom: 2rem;
+.navbar img, .avatar-valkna img {
+    width: 50px;
+    height: 50px;
+}
+
+.avatar-valkna {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-
-.navbar img {
+    align-items: center;
     justify-content: space-between;
 }
 
 .avatar-valkna img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
-.avatar-valkna h4 {
-    font-size: 1rem;
-}
-
-.avatar-valkna a {
+.avatar-valkna h4, .avatar-valkna h4 a {
+    color: #0f0;
     text-decoration: none;
-    color: var(--text);
 }
 
-.objetivos p {
+.objetivos, .alo {
     text-align: justify;
-    text-indent: 1.5rem;
-    padding: 0.5rem;
 }
 
-main p {
-    text-align: justify;
-    text-indent: 1.5rem;
-    padding: 0.5rem;
-}
-
-footer p {
+footer {
     text-align: center;
-    align-items: center;
-    margin: 3rem;
-    padding: 1rem;
-    border-top: solid 0.2rem black;
-
 }
 
-/*responsive*/
-@media screen and (min-width: 900px) {
-
-    body {
-        margin: 1.5rem 3rem 1rem 2rem;
-        overflow-x: hidden;
-        overflow-y: hidden;
+@media screen and (max-width: 600px) {
+    .navbar, .avatar-valkna, .objetivos, .alo, footer {
+        width: 100%;
     }
-
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-top: -1.5rem;
-    }
-    
-    .navbar a {
-        padding: 1rem;
-    }
-
-    .navbar img:hover {
-        
-    }
-    
-    .navbar img {
-        border-radius: 50%;
-        justify-content: space-around;
-    }
-
-    header {
-        margin: 0.5rem 3rem 1rem 2rem;
-        display: flex;
-        flex-flow: row;
-        align-items: flex-start;
-        text-align: center;
-    }
-    
-    
-    header p {
-        text-align: justify;
-        text-indent: 1.5rem;
-        padding: 0.3rem;
-        width: auto;
-    }
-    
-    
-    header h4 {
-        margin-left: -9rem;
-        margin-top: 1rem;
-    }
-    
-    .avatar-valkna img {
-        margin: -4rem 0rem 0rem 0rem;
-        display: flex;
-        align-items: flex-start;
-        width: 400px;
-        height: 214px;
-    }
-    
-    .avatar-valkna a {
-        text-decoration: none;
-        color: var(--text);
-    }
-    
-    .avatar-valkna a:hover {
-        text-decoration: underline;
-    }
-    
-    .avatar-valkna a:visited {
-        text-decoration: underline;
-    }
-    
-    .objetivos {
-        margin-top: -3rem;
-    }
-
-    main {
-        margin: 1rem 0rem 0rem 0rem;
-        padding: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-    
-    
-    main p {
-        padding: 0.5rem;
-        text-indent: 1.5rem;
-        align-items: center;
-        text-align: justify;
-        margin: 0rem 7rem 0rem 7rem;
-    }
-    
-    main a {
-        text-decoration: none;
-        color: var(--text);
-    }
-    
-    main a:hover {
-        text-decoration: underline;
-    }
-    
-    main a:visited {
-        text-decoration: underline;
-    }
-    
-    footer {
-        margin: 0rem;
-        display: flex;
-        justify-content: center;
-        font-size: smaller;
-        border-top: solid 0.12rem var(--borders);
-    }
-
-
-
 }
